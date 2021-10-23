@@ -12,7 +12,7 @@ import { MongooseModule } from '@nestjs/mongoose';
       isGlobal: true,
       load: [config]
     }),
-    MongooseModule.forRoot(config.mongodbURL),
+    MongooseModule.forRoot("mongodb://mongoadmin:mongoadmin@localhost:27017/nestjs-auth?authSource=admin"),
    ],
   controllers: [],
   providers: []
